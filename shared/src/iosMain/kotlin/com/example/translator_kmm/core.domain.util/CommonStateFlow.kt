@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.flow.StateFlow
 
 // Common StateFlow implementation for iOS
-class CommonStateFlow<T> actual constructor(
+actual open class CommonStateFlow<T> actual constructor(
     private val flow: StateFlow<T>
 ) : CommonFlow<T>(flow), StateFlow<T> {
 
