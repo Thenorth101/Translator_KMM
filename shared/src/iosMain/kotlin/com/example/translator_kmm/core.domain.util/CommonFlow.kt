@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
 // iOS implementation of Flow
-actual class CommonFlow<T> actual constructor(
+actual open class CommonFlow<T> actual constructor(
     private val flow: Flow<T>
 ) : Flow<T> by flow {
 
